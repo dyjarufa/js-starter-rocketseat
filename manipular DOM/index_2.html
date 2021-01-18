@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS</title>
+</head>
+<body>
+
+    <div id="app">
+        <!-- <input type="text" name="orc" id="orc"> -->
+
+        <input type="text" name="wizard">
+        <input type="text" name="wizard_2">
+        <button class="botao"> adcionar orc</button>
+    </div>
+
+    <script>
+        // var inputElemnt = document.getElementById("orc"); //busco a referencia do elemento pelo vetor
+        // var inputElement = document.getElementsByTagName('input')[0]; //retorna um vetor, caso eu queira especificar a posição uso o " [] ""
+        // var inputElement = document.getElementsByClassName('botao')[0]; //também retorna um vetor
+
+        // var inputElement = document.querySelector('body div#app input') //navego pelos componentes
+        // var inputElement = document.querySelector('input[name=wizard]') //referencia a propridade dentro de um elemento
+        // var inputElement = document.querySelectorAll('input') //se tiver dois elementos retorna o primeiro, para retornar todos em vetor uso o "All"
+        
+        
+
+        //usando querySelector
+        // var btnElement = document.querySelector('button.botao');
+        // btnElement.onclick = function(){
+        //     alert('Botão clicado');
+        // }
+
+            var btnElement = document.querySelector('button.botao');
+            var inputElement =  document.querySelector('input[name=wizard]');
+
+            btnElement.onclick = function(){
+                var textoDigitado = inputElement.value;
+                alert(textoDigitado)
+            }
+
+    </script>
+    
+</body>
+</html>

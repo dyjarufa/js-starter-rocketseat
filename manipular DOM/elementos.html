@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS</title>
+</head>
+<body>
+
+    <div id="app">
+      <input id="nome">
+    </div>
+
+    <script>
+        var linkElement = document.createElement('a');
+        linkElement.setAttribute('href', 'https://rocketseat.com.br/');
+        linkElement.setAttribute('title', 'acessar ao site da rocketseat')
+
+        var textElement = document.createTextNode('Acesso ao site')
+        linkElement.appendChild(textElement);
+
+        var qualquerCoisa = document.querySelector('#app');
+        qualquerCoisa.appendChild(linkElement);
+
+        var inputComIdnome = document.querySelector('#nome');
+        // qualquerCoisa.removeChild(inputComIdnome);
+    </script>
+    
+</body>
+</html>

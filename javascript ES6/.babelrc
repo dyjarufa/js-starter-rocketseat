@@ -1,0 +1,3 @@
+{
+    "presets": ["@babel/preset-env"] //qual ambiente estou trabalhando. ex: browser, react native, mobile. converte as features do es6, es7 e es8 para serem interpretadas pelos navegadores
+}

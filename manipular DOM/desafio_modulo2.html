@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="nome"> Digite um nome
+    <button onclick="adcionar()">Adcionar</button>
+    <ul></ul>
+
+    <script>
+        var nomes = ["Jesus", "Benício", "Kelly"];
+
+        listElement = document.querySelector('ul');
+        
+        function additem(text){
+            var liElement = document.createElement('li');
+            var textName = document.createTextNode(text);
+
+            liElement.appendChild(textName);
+
+            listElement.appendChild(liElement);
+        }
+
+        function adcionar(){
+            var inputElement = document.querySelector('input');
+            additem(inputElement.value);
+            inputElement.value = "";
+        }
+
+        for(nome of nomes){
+           additem(nome);
+        }
+
+
+    </script>
+</body>
+</html>
